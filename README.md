@@ -1,6 +1,3 @@
 #Embertut
 
-A simple, ember.js tutorial
-
-## Chapter 1: Basic
-
+Un tutorial sencillo de ember.js
