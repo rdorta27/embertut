@@ -1,0 +1,65 @@
+{
+    "id": 1,
+    "name": "Dream Team",
+    "sport": {
+        "id": 1,
+        "name": "Basketball",
+        "number_of_players": 5
+    },
+    "tournaments": [{
+        "id": 1,
+        "type": "Pre-Olympics",
+        "year": 1992,
+        "place": "Portland"
+    }, {
+        "id": 2,
+        "type": "'Olympics",
+        "year": 1992,
+        "place": "'Barcelona"
+    }],
+    "players": [{
+        "id": 1,
+        "fullName": "David Robinson",
+        "number": 5
+    }, {
+        "id": 2,
+        "fullName": "Patrick Ewing",
+        "number": 6
+    }, {
+        "id": 3,
+        "fullName": "Larry Bird",
+        "number": 7
+    }, {
+        "id": 4,
+        "fullName": "Scottie Pippen",
+        "number": 8
+    }, {
+        "id": 5,
+        "fullName": "Michael Jordan",
+        "number": 9
+    }, {
+        "id": 6,
+        "fullName": "Clyde Drexler",
+        "number": 10
+    }, {
+        "id": 7,
+        "fullName": "Karl Malone",
+        "number": 11
+    }, {
+        "id": 8,
+        "fullName": "John Stockton",
+        "number": 12
+    }, {
+        "id": 9,
+        "fullName": "Chris Mullin",
+        "number": 13
+    }, {
+        "id": 10,
+        "fullName": "Charles Barkley",
+        "number": 14
+    }, {
+        "id": 11,
+        "fullName": "Magic Johnson",
+        "number": 15
+    }]
+}

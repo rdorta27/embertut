@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Embertut</title>
+    <link rel="stylesheet" href="/css/tutorial.css">
+    <link rel="stylesheet" href="/css/formatter.css">
+    <link rel="stylesheet" href="/css/embertut.css">
+    <script type="text/javascript" src="/js/libs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/libs/handlebars-1.0.rc.1.min.js"></script>
+    <script type="text/javascript" src="/js/libs/ember-1.0.0-pre.2.min.js"></script>
+    <script type="text/javascript" src="/js/formatter.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          Formatter.generate('code-html', 'html', 'HTML', '/templates/1-starting/embertut.html');
+          Formatter.generate('code-css', 'css+html', 'HTML + CSS', '/templates/1-starting/embertut.css', '/templates/1-starting/embertut.html');
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Ember Tutorial</h1>
+    </header>
+    <section>
+      <h2>Capítulo 1: Comenzando...</h2>
+      <p>
+        Antes de comenzar, se va a mostrar el tipo de interfaz básico que se desea mostrar.
+        Se va a trabajar con una lista de jugadores pertenecientes al "Dream Team", con su número de camisa.
+      </p>
+      <div class="format">
+        <div class="format-header">
+          <h1 id="code-html-title"></h1>
+        </div>
+        <div class="format-section1">
+          <table>
+            <tr>
+              <td class="format-line-number" id="code-html-line-number"></td>
+              <td class="format-code" id="code-html-formatted-code"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="format-section2">
+          <div class="format-render" id="code-html-render"></div>
+        </div>
+        <div class="format-hide" id="code-html"></div>
+      </div>
+      <p>
+        Si colocamos un css especializado, se puede tener una mejor vista de la aplicación:
+      </p>
+      <div class="format">
+        <div class="format-header">
+          <h1 id="code-css-title"></h1>
+        </div>
+        <div class="format-section1">
+          <table>
+            <tr>
+              <td class="format-line-number" id="code-css-line-number"></td>
+              <td class="format-code" id="code-css-formatted-code"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="format-section2">
+          <div class="format-render embertut" id="code-css-render"></div>
+        </div>
+        <div class="format-hide" id="code-css"></div>
+        <div class="format-hide" id="code-css-extra"></div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/0-introduction.html">Anterior</a></li>
+          <li><a href="/2-javascript.html">Siguiente</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

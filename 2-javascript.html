@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Embertut</title>
+    <link rel="stylesheet" href="/css/tutorial.css">
+    <link rel="stylesheet" href="/css/formatter.css">
+    <link rel="stylesheet" href="/css/embertut.css">
+    <script type="text/javascript" src="/js/libs/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/libs/handlebars-1.0.rc.1.min.js"></script>
+    <script type="text/javascript" src="/js/libs/ember-1.0.0-pre.2.min.js"></script>
+    <script type="text/javascript" src="/js/formatter.js"></script>
+    <script type="text/javascript" src="/js/data.js"></script>
+    <!--
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          Formatter.generate('code-html', 'html', 'HTML', '/templates/1-starting/embertut.html');
+          Formatter.generate('code-css', 'css+html', 'HTML + CSS', '/templates/1-starting/embertut.css', '/templates/1-starting/embertut.html');
+        });
+    </script>
+    -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          Formatter.generate('code-main', 'javascript', 'Javascript Inicial', '/templates/2-javascript/team.js');
+          Formatter.generate('code-js', 'javascript', 'Javascript', '/templates/2-javascript/js-example.js');
+          Formatter.generate('code-jquery', 'javascript', 'jQuery', '/templates/2-javascript/jquery-example.js');
+          Formatter.generate('code-template', 'html', 'Template Handlebars', '/templates/2-javascript/hb-example.handlebars');
+          Formatter.generate('code-handlebars', 'javascript', 'Código Handlebars', '/templates/2-javascript/hb-example.js');
+          /*
+          Formatter.generate('code-main', 'javascript', 'Carga Inicial', './templates/example-1/team.js');
+          Formatter.generate('code-js', 'javascript', 'Código Javascript', './templates/example-1/js-example.js');
+          Formatter.generate('code-jquery', 'javascript', 'Código JQuery', './templates/example-1/jquery-example.js');
+          Formatter.generate('code-template', 'html', 'Template Handlebars', './templates/example-1/hb-example.handlebars');
+          Formatter.generate('code-handlebars', 'javascript', 'Código Handlebars', './templates/example-1/hb-example.js');
+          */
+        });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Ember Tutorial</h1>
+    </header>
+    <section>
+      <h2>Capítulo 1: Javascript, jQuery... Handlebars</h2>
+      <p>
+        Para realizar la implementación de dicha lista utilizando javascript, crearemos un objeto al cual llamaremos &laquo;team&raquo;,
+        el cual va a obtener la misma información a manejar que el ejemplo en HTML. Esta información va a ser compartida por todos los ejemplos
+        en javascript:
+      </p>
+      <div class="format">
+        <div class="format-header">
+          <h1 id="code-main-title"></h1>
+        </div>
+        <div class="format-section1">
+          <table>
+            <tr>
+              <td class="format-line-number" id="code-main-line-number"></td>
+              <td class="format-code" id="code-main-formatted-code"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="format-section2">
+          <div class="format-render" id="code-main-render"></div>
+        </div>
+        <div class="format-hide" id="code-main"></div>
+      </div>
+      <p>
+        Una vez definida la variable en javascript. Utilizamos javascript estándar para generar un listado igual que el HTML:
+      </p>
+      <div class="format">
+        <div class="format-header">
+          <h1 id="code-js-title"></h1>
+        </div>
+        <div class="format-section1">
+          <table>
+            <tr>
+              <td class="format-line-number" id="code-js-line-number"></td>
+              <td class="format-code" id="code-js-formatted-code"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="format-section2">
+          <div class="format-render embertut" id="code-js-render"></div>
+        </div>
+        <div class="format-hide" id="code-js"></div>
+      </div>
+      <p>
+        Ahora, utilizamos JQuery para generar el mismo listado HTML:
+      </p>
+      <div class="format">
+        <div class="format-header">
+          <h1 id="code-jquery-title"></h1>
+        </div>
+        <div class="format-section1">
+          <table>
+            <tr>
+              <td class="format-line-number" id="code-jquery-line-number"></td>
+              <td class="format-code" id="code-jquery-formatted-code"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="format-section2">
+          <div class="format-render embertut" id="code-jquery-render"></div>
+        </div>
+        <div class="format-hide" id="code-jquery"></div>
+      </div>
+      <p>
+        Para generar el listado utilizando handlebars, hay que dividir la información en dos. Primero, debe crearse un template
+        de handlebars, el cual es creado utilizando un script de tipo "text/x-handlebars-template".
+        Dicho script, va a hacer render de un objeto con la propiedad nombre ("name") y a ciclar en la propiedad jugardores ("players"),
+        para mostrar la información del nombre ("fullName") y del número ("number") de cada uno de ellos.
+      </p>
+      <div class="format">
+        <div class="format-header">
+          <h1 id="code-template-title"></h1>
+        </div>
+        <div class="format-section1">
+          <table>
+            <tr>
+              <td class="format-line-number" id="code-template-line-number"></td>
+              <td class="format-code" id="code-template-formatted-code"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="format-section2">
+          <div class="format-render embertut" id="code-template-render"></div>
+        </div>
+        <div class="format-hide" id="code-template"></div>
+      </div>
+      <p>
+        Pero eso sólo define el template a mostrar. Para que aparezca la información, hay que utilizar la librería handlebars para crear un template
+        con la variable &laquo;team&raquo;, la cual va a tener la información a pasar al template. Luego se hace <i>render</i> del template, y se asocia al div deseado.
+        El template se va a generar dentro del objeto seleccionado, en este caso "code-handlebars-render".
+        La ventaja de este módelo es que el formato definido en el template se mantiene independiente de la lógica de la aplicación,
+        permitiendo que los ajustes de interfaz no afecten la lógica de la misma.
+      </p>
+      <script id="test-template" type="text/x-handlebars-template">
+        <h1>{{name}}</h1>
+        <ul>
+        {{#players}}
+          <li>{{fullName}} ({{number}})</li>
+        {{/players}}
+        </ul>
+      </script>
+      <div class="format">
+        <div class="format-header">
+          <h1 id="code-handlebars-title"></h1>
+        </div>
+        <div class="format-section1">
+          <table>
+            <tr>
+              <td class="format-line-number" id="code-handlebars-line-number"></td>
+              <td class="format-code" id="code-handlebars-formatted-code"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="format-section2">
+          <div class="format-render embertut" id="code-handlebars-render"></div>
+        </div>
+        <div class="format-hide" id="code-handlebars"></div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/1-starting.html">Anterior</a></li>
+          <li><a href="#"><!--Siguiente--></a></li>
+        </ul>
+      </nav>
+    </footer>
+
+<!--
+    <p>
+      Ahora, utilizamos JQuery para generar el mismo listado HTML:
+    </p>
+
+    <div id="code-jquery" style="display:none"></div>
+    <div>
+      <h3 class="code-top" id="code-jquery-title"></h3>
+      <div class="code-top">
+        <table>
+          <tr>
+            <td id="code-jquery-line-number" class="code-line-number"></td>
+            <td id="code-jquery-formatted-code" class="code-formatted-code"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="code-bottom">
+        <div id="code-jquery-render" class="code-render"></div>
+      </div>
+    </div>
+    <p>
+      Para generar el listado utilizando handlebars, hay que dividir la información en dos. Primero, debe crearse un template
+      de handlebars, el cual es creado utilizando un script de tipo "text/x-handlebars-template".
+      Dicho script, va a hacer render de un objeto con la propiedad nombre ("name") y a ciclar en la propiedad jugardores ("players"),
+      para mostrar la información del nombre ("fullName") y del número ("number") de cada uno de ellos.
+    </p>
+    <div id="code-template" style="display:none"></div>
+    <div>
+      <h3 class="code-top" id="code-template-title"></h3>
+      <div class="code-top">
+        <table>
+          <tr>
+            <td id="code-template-line-number" class="code-line-number"></td>
+            <td id="code-template-formatted-code" class="code-formatted-code"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="code-bottom">
+        <div id="code-template-render" class="code-render"></div>
+      </div>
+    </div>
+    <p>
+      Pero eso sólo define el template a mostrar. Para que aparezca la información, hay que utilizar la librería handlebars para crear un template
+      con la variable &laquo;team&raquo;, la cual va a tener la información a pasar al template. Luego se hace <i>render</i> del template, y se asocia al
+      div deseado. El template se va a generar dentro del objeto seleccionado, en este caso "code-handlebars-render".
+    </p>
+    <div id="code-handlebars" style="display:none"></div>
+    <script id="test-template" type="text/x-handlebars-template">
+      <h4>{{name}}</h4>
+      <ul>
+      {{#players}}
+      <li>{{fullName}} ({{number}})</li>
+      {{/players}}
+      </ul>
+    </script>
+    <div>
+      <h3 class="code-top" id="code-handlebars-title"></h3>
+      <div class="code-top">
+        <table>
+          <tr>
+            <td id="code-handlebars-line-number" class="code-line-number"></td>
+            <td id="code-handlebars-formatted-code" class="code-formatted-code"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="code-bottom">
+        <div id="code-handlebars-render" class="code-render"></div>
+      </div>
+    </div>
+  -->
+  </body>
+</html>

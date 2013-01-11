@@ -1,0 +1,112 @@
+/**
+ * Embertut CSS Tutorial
+ * Copyright (c) 2013 Rubén Dorta
+ **/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #a367b1;
+}
+/*
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1 {
+	font-size: 28px;
+}
+h2 {
+	font-size: 22px;
+	margin-bottom: 22px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+header {
+	width: 860px;
+	margin: auto;
+	margin-bottom: 0;
+	background-color: #1f1f1f;
+	color: #ffffff;
+	padding: 42px 28px;
+}
+section {
+	width: 860px;
+	margin: auto;
+	margin-top: 0;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 28px;
+	min-height: 400px;
+}
+footer {
+	width: 860px;
+	margin: auto;
+	margin-top: 0;
+	background-color: #3f3f3f;
+	color: #ffffff;
+	height: 42px;
+	padding: 7px 28px;
+}
+footer > nav {
+	margin: 0;
+	padding: 0;
+}
+footer > nav > ul {
+	margin: 0;
+	padding: 14px 0;
+	list-style-type: none;
+}
+footer > nav > ul > li {
+	font-size: 14px;
+}
+footer > nav > ul > li:first-of-type {
+	float: left;
+}
+footer > nav > ul > li:last-of-type {
+	float: right;
+}
+footer > nav > ul > li > a {
+	text-decoration: none;
+	color: #ffffff;
+}
