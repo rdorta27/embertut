@@ -4,34 +4,35 @@
  **/
 
 .embertut {
-	background-color: #ccccff;
+    background-color: #ccccff;
 }
-.embertut:first-of-type {}
+.embertut:first-of-type {
+}
 .embertut:last-of-type {
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .embertut h1 {
-	padding: 10px;
-	font-size: 20px;
+    padding: 10px;
+    font-size: 20px;
 }
-.embertut ul  {
-	padding: 0 10px 10px 10px;
-	list-style-type: none;
+.embertut ul {
+    padding: 0 10px 10px 10px;
+    list-style-type: none;
 }
 .embertut ul > li {
-	font-size: 12px;
-	padding: 5px;
-	background-color: #ececec;
-	border: 1px solid #7c7c7c;
-	border-bottom: none;
+    font-size: 12px;
+    padding: 5px;
+    background-color: #ececec;
+    border: 1px solid #7c7c7c;
+    border-bottom: none;
 }
 .embertut ul > li:first-of-type {
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .embertut ul > li:last-of-type {
-	border-bottom: 1px solid #7c7c7c;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+    border-bottom: 1px solid #7c7c7c;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

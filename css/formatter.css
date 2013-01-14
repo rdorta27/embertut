@@ -4,61 +4,61 @@
  **/
 
 .format {
-	border-radius: 5px;
- 	border: 1px solid #333333;
- 	margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    margin: 20px 0;
 }
 .format > .format-header {
-	background-color: #666666;
-	border-bottom: 1px solid #333333;
- 	color: #ffffff;
+    background-color: #666666;
+    border-bottom: 1px solid #333333;
+    color: #ffffff;
 }
 .format > .format-header > h1 {
- 	font-size: 18px;
-	width: 100%;
-	padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
 }
 .format > .format-section1 {
-	border-bottom: 1px solid #333333;
-	font-family: 'Consolas', Monospace;
-	font-size: 12px;
-	padding: 0;
-	margin: 0;
+    border-bottom: 1px solid #333333;
+    font-family: 'Consolas', Monospace;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
 }
 .format > .format-section1 .format-line-number {
-	vertical-align: top;
-	background-color: #ececff;
-	color: #000000;
+    vertical-align: top;
+    background-color: #ececff;
+    color: #000000;
 }
 .format > .format-section1 .format-line-number > pre {
-	text-align: center;
-	margin: 10px;
+    text-align: center;
+    margin: 10px;
 }
 .format > .format-section1 .format-code {
-	width: 100%;
-	vertical-align: top;
-	background: #4f4f4f;
-	color: #efefef;
+    width: 100%;
+    vertical-align: top;
+    background: #4f4f4f;
+    color: #efefef;
 }
 .format > .format-section1 .format-code > pre {
-	text-align: left;
-	margin: 10px;
+    text-align: left;
+    margin: 10px;
 }
 .format > .format-section2 {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 .format > .format-section2 .format-render {
-	padding: 20px 40px;
+    padding: 20px 40px;
 }
 .format > .format-section2 .format-render > h1 {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 .format > .format-section2 .format-render > ul {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 .format .format-hide {
-	display: none;
+    display: none;
 }
