@@ -14,11 +14,11 @@
     <script type="text/javascript" src="/js/data.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
-          Formatter.generate('code-main', 'javascript', 'Javascript Inicial', '/templates/2-javascript/team.js');
-          Formatter.generate('code-js', 'javascript', 'Javascript', '/templates/2-javascript/js-example.js');
-          Formatter.generate('code-jquery', 'javascript', 'jQuery', '/templates/2-javascript/jquery-example.js');
-          Formatter.generate('code-template', 'html', 'Template Handlebars', '/templates/2-javascript/hb-example.handlebars');
-          Formatter.generate('code-handlebars', 'javascript', 'Código Handlebars', '/templates/2-javascript/hb-example.js');
+            Formatter.generate('code-main', 'javascript', 'Javascript Inicial', '/templates/2-javascript/team.js');
+            Formatter.generate('code-js', 'javascript', 'Javascript', '/templates/2-javascript/js-example.js');
+            Formatter.generate('code-jquery', 'javascript', 'jQuery', '/templates/2-javascript/jquery-example.js');
+            Formatter.generate('code-template', 'html', 'Template Handlebars', '/templates/2-javascript/hb-example.handlebars');
+            Formatter.generate('code-handlebars', 'javascript', 'Código Handlebars', '/templates/2-javascript/hb-example.js');
         });
     </script>
   </head>
@@ -124,7 +124,7 @@
         <h1>{{name}}</h1>
         <ul>
         {{#players}}
-          <li>{{fullName}} ({{number}})</li>
+        <li>{{fullName}} ({{number}})</li>
         {{/players}}
         </ul>
       </script>
@@ -149,8 +149,12 @@
     <footer>
       <nav>
         <ul>
-          <li><a href="/1-starting.html">Anterior</a></li>
-          <li><a href="#"><!--Siguiente--></a></li>
+          <li>
+            <a href="/1-starting.html">Anterior</a>
+          </li>
+          <li>
+            <a href="#"><!--Siguiente--></a>
+          </li>
         </ul>
       </nav>
     </footer>
